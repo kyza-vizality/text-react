@@ -7,8 +7,7 @@ const {
 const { patch, unpatch } = require("@vizality/patcher");
 const ReactionBuilderModal = require("./components/ReactionBuilderModal");
 const MiniPopover = getModule(
-	(m) => m.default && m.default.displayName === "MiniPopover",
-	false
+	(m) => m.default && m.default.displayName === "MiniPopover"
 );
 const TextReactButton = require("./components/TextReactButton")(MiniPopover);
 const { getMessage, getMessages } = getModule("getMessages");
