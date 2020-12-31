@@ -4,7 +4,7 @@ const {
 	React,
 } = require("@vizality/webpack");
 const { open: openModal } = require("@vizality/modal");
-const Tooltip = getModuleByDisplayName("Tooltip", false);
+const Tooltip = getModuleByDisplayName("Tooltip");
 const ReactionBuilderModal = require("./ReactionBuilderModal");
 const classes = getModule("icon", "isHeader");
 
