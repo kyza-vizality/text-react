@@ -6,7 +6,7 @@ const {
 const { open: openModal } = require("@vizality/modal");
 const Tooltip = getModuleByDisplayName("Tooltip", false);
 const ReactionBuilderModal = require("./ReactionBuilderModal");
-const classes = getModule(["icon"], false);
+const classes = getModule("icon", "isHeader");
 
 module.exports = ({ Button }) =>
 	class TextReactButton extends React.Component {
