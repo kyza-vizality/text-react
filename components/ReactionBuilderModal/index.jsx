@@ -2,8 +2,8 @@ const { React, getModule } = require("@vizality/webpack");
 const { Button, Modal } = require("@vizality/components");
 const { FormTitle } = require("@vizality/components");
 const { pop: closeModal } = require("@vizality/webpack").modal;
-const { addReaction } = getModule(["addReaction"], false);
-const { getMessage } = getModule(["getMessages"], false);
+const { addReaction } = getModule("addReaction");
+const { getMessage } = getModule("getMessages");
 const Form = require("./Form");
 
 class ReactionBuilderModal extends React.PureComponent {
