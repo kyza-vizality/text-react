@@ -1,4 +1,4 @@
-const { Plugin } = require("@vizality/entities");
+const { Plugin } = require("@vizality/core");
 const { React, getModule } = require("@vizality/webpack");
 const { push: openModal } = require("@vizality/webpack").modal;
 const {
@@ -11,11 +11,11 @@ const MiniPopover = getModule(
 	false
 );
 const TextReactButton = require("./components/TextReactButton")(MiniPopover);
-const { getMessage, getMessages } = getModule(["getMessages"], false);
-const { getChannel } = getModule(["getChannel"], false);
-const { getChannelId } = getModule(["getLastSelectedChannelId"], false);
-const DiscordPermissions = getModule(["Permissions"], false).Permissions;
-const Permissions = getModule(["getHighestRole"], false);
+const { getMessage, getMessages } = getModule("getMessages");
+const { getChannel } = getModule("getChannel");
+const { getChannelId } = getModule("getLastSelectedChannelId");
+const DiscordPermissions = getModule("Permissions").Permissions;
+const Permissions = getModule("getHighestRole");
 
 const reactions = {
 	multiple: {
