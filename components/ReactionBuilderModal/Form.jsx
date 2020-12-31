@@ -9,8 +9,8 @@ const {
 	settings: { TextInput, SwitchItem },
 } = require("@vizality/components");
 const { close: closeModal } = require("@vizality/modal");
-const Reactions = getModuleByDisplayName("Reactions", false);
-const margins = getModule(["marginTop20"], false);
+const Reactions = getModuleByDisplayName("Reactions");
+const margins = getModule("marginTop20");
 
 class Form extends React.PureComponent {
 	render() {
